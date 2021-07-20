@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+    <body>
+    <nav class='navbar'>
+        <img  class="ABCProducts" src="https://www.linkpicture.com/q/abc.svg" alt="ABC Products">
+        <img  class="HighradiusLogo" src="https://www.linkpicture.com/q/logo_16.svg"  alt="Highradius Logo" >
+    </nav>
+    <invoice class="invoices">Invoice List</invoice>
+    <div class="main-body">
+        <div  style="float: right">
+            <button id="myBtn">+ Add</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="container">
+                        <form action="action_page.php">
+                            <h2 class="addinvoice" >Add Invoice</h2>
+                            <div class="grid-container">
+                                <div class="grid-item">
+                                    <div>
+                                        <label for="fname"><span style="color:#97A1A9">Customer Name</span><span style="color:red">*</span></label>
+                                        <input type="text" id="fname" name="firstname" >
+                                    </div>
+                                    <div>
+                                        <label for="lname"><span style="color:#97A1A9">Customer No.</span><span style="color:red">*</span></label>
+                                        <input type="text" id="lname" name="lastname" >
+                                    </div>
+                                    <div>
+                                        <label for="lname"><span style="color:#97A1A9">Invoice No.</span><span style="color:red">*</span></label>
+                                        <input type="text" id="lname" name="lastname" >
+                                    </div>
+                                    <div>
+                                        <label for="lname"><span style="color:#97A1A9">Invoice Amount</span><span style="color:red">*</span></label>
+                                        <input type="text" id="lname" name="lastname" >
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                        <div>
+                                            <label for="country"><span style="color:#97A1A9">Due Date</span><span style="color:red">*</span></label>
+                                            <input type="date" id="birthday" name="birthday">
+                                        </div>
+                                    <div>
+                                        <label for="subject" style="float:left"><span style="color:#97A1A9">Subject</span></label>
+                                        <textarea id="subject" name="subject"  style="height:200px"></textarea>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="addin">
+                          <input type="Reset" value="Reset">
+                          <button >Save</button>
+                        </div>
+                        </form>
+                      </div>
+                </div>
+            </div>
+            <button id="myBtn2">✎  Edit</button>
+                <div id="id02" class="modal2">
+                    <div class="model-content2">
+                        <form  action="/action_page.php">
+                            <div class="container2">
+                            <span  class="close2">&times;</span>
+                            <h2 style="color: white">Edit Invoice</h2>
+                            <div>
+                                <label for="lname"><span style="color:#97A1A9">Invoice Amount</span></label>
+                                <input type="text" id="lname" name="lastname" >
+                            </div>
+                            <div>
+                                <label for="subject" style="float:left"><span style="color:#97A1A9">Notes</span></label>
+                                
+                                <textarea id="subject" name="subject"  style="height:200px"></textarea>
+                            </div>
+                            <div class="addin">
+                                <input type="Reset" value="Reset">
+                                <button >Save</button>
+                            </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+            <button id="myBtn1"> - Delete</button>
+                <div id="id01" class="modal1">
+                    <div class="model-content1">
+                        <form  action="/action_page.php">
+                        <div class="container1">
+                            <span  class="close1">&times;</span>
+                            <h2 style="color: white">Delete Record(s)?</h2>
+                            <p>You'll lose your record(s) after this action. We can't recover them once you delete.</p>
+                            <br>
+                            <p> Are you sure you want to <span style="color: red">permanently delete</span> them?</p>
+                            <div class="clearfix">
+                            <button  type="button" class="cancelbtn">Cancel</button>
+                            <button  type="button" class="deletebtn">Delete</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            </div>
+            <input class="search" type="text" placeholder="Search by invoice number 🔍">
+        </div>
+        <br>
+        <table class="table" cellpadding="0" cellSpacing="0">
+            <thead>
+                <tr>
+                    <th><input type="checkbox" id="checkall"/></th>
+                    <th>Customer Name</th>
+                    <th>Customer #</th>
+                    <th>Invoice #</th>
+                    <th>Invoice Amount</th>
+                    <th>Due Date</th>
+                    <th>Predicted Payment Date</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                
+            </tbody>
+        </table>
+        </div>
+        <button class="next-btn" onclick="Next()" style="position: absolute; right: 10px; top: 350px;"> > </button>
+        <button class="prev-btn" onclick="Prev()" style="position: absolute; left: 10px; top: 350px;"> < </button>
+        <script src="index.js"></script>
+    </body>
+</html>

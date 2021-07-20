@@ -1,0 +1,405 @@
+body{
+    background-color: #58687e;
+    margin:0;
+    padding:0;
+}
+.main-body{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 10px;
+    background-color:#273D49CC;
+}
+.table{
+    width: 97%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.HighradiusLogo{
+    margin-left: 300px;
+    margin-top: 10px;
+    margin-bottom: 20px
+}
+.ABCProducts{
+    margin-left: 38px;
+    margin-top: 10px;
+    margin-bottom: 20px
+}
+button{
+    height: 30px;
+    width: 99px;
+    font-size: medium;
+    border: 1px solid #356680;
+    border-radius: 10px;
+    background-color: #273D49CC;
+    color: #97A1A9;
+    margin-left: 10px;
+}
+
+.search{
+    height: 30px;
+    width: 270px;
+    font-size: medium;
+    border: 1px solid #356680;
+    text-align: left;
+    border-radius: 10px;
+    background-color: #273D49CC;
+    color: #97A1A9;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+td{
+    border: 1px solid #273D49CC;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+ th {
+    border: 1px solid #273D49CC;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px;
+    color: #97A1A9;
+} 
+.invoices{
+    color: white;
+    font-size: 25px;
+    margin-left: 38px;
+}
+tr:nth-child(even) {
+    background-color:#283A46 ;
+}
+tr:nth-child(odd) {
+    background-color:#273D49CC;
+}
+
+
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed !important;  /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #2A3E4C;
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 10px;
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+#lname , #fname , #subject{
+    background-color: #283A46;
+    color : #97A1A9;
+}
+#lname , #fname , select, textarea {
+    width: 50%; /* Full width */
+    text-align: left;
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #356680; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=Reset] {
+    background-color:#283A46 ;
+    color:white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #birthday{
+    background-color: #283A46;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #2A3E4C;
+    color:#C0C6CA;
+    padding: 20px;
+  }
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #2A3E4C;
+    padding: 10px;
+  }
+  .grid-item{
+    background-color:#283A46;
+    border: 1px solid #2A3E4C;
+    padding: 20px;
+    font-size: 15px;
+  }
+  .addinvoice{
+    color: white;
+  }
+  .addin{
+    text-align: right;
+  }
+  input{
+    color:white;
+  }
+  label {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+  }
+  .clearfix{
+    text-align: right;
+  }
+
+
+
+
+  .container1 {
+    border-radius: 5px;
+    background-color: #2A3F4D;
+    color:#C0C6CA;
+    padding: 20px;
+    border: 1px solid white;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+  }
+  .modal-content1 {
+    background-color: #2A3E4C;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 10px;
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close1 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close1:hover,
+  .close1:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal1 {
+    display: none; /* Hidden by default */
+    position: fixed !important;  /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+  }
+
+
+
+
+
+  .container2 {
+    border-radius: 5px;
+    background-color: #2A3F4D;
+    color:#C0C6CA;
+    padding: 20px;
+    border: 1px solid white;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+  }
+  .modal-content2 {
+    background-color: #2A3E4C;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 10px;
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close2:hover,
+  .close2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal2 {
+    display: none; /* Hidden by default */
+    position: fixed !important;  /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+  }
+
+  .next-btn {
+    height: 50px;
+    line-height: 50px;  
+    width: 50px;  
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: #39495E;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+  }
+  .prev-btn {
+    height: 50px;
+    line-height: 50px;  
+    width: 50px;  
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: #39495E;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+  }
+
+.next-btn:hover,
+.next-btn:focus {
+  background-color:#14AFF1;
+  text-decoration: none;
+  cursor: pointer;
+}
+.prev-btn:hover,
+.prev-btn:focus {
+  background-color:#14AFF1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+  .HighradiusLogo{
+    margin-left: 150px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 150px;
+  }
+.ABCProducts{
+    margin-left: 150px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 150px;
+}
+body{
+  background-color: #58687e;
+  margin:0;
+  padding:0;
+}
+.table{
+  width: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.invoices{
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+}
+td{
+  border: 1px solid #273D49CC;
+  text-align: center;
+  padding: 3px;
+  color: white;
+  font-size: 11px;
+}
+th {
+  border: 1px solid #273D49CC;
+  text-align: center;
+  font-weight: bold;
+  font-size: 11px;
+  padding: 6px;
+  color: #97A1A9;
+}
+.next-btn {
+  height: 30px;
+  line-height: 30px;  
+  width: 30px;  
+  font-size: 0.8em;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: #39495E;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  right: 40px;
+  top: 190px
+}
+.prev-btn {
+  height: 30px;
+  line-height: 30px;  
+  width: 30px;  
+  font-size: 0.8em;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: #39495E;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  left: 350px;
+  top: 190px
+}
+}
